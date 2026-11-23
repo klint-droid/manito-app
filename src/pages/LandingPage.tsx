@@ -296,7 +296,19 @@ export function LandingPage() {
             <span className="font-bold text-white">3D Manita-Manito</span>
             <span>— Make Every Gift a Little More Magical.</span>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4">
+            <span>
+              Developed by{' '}
+              <a
+                href="https://klint-ruales.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-pastel-gold underline decoration-pastel-gold/50 underline-offset-4 transition hover:text-amber-200 hover:decoration-amber-200"
+              >
+                Klint Ruales
+              </a>
+            </span>
+            <span className="hidden text-white/20 sm:inline">•</span>
             <span>Runs locally in your browser via WebGL &amp; localStorage.</span>
             <button
               type="button"
