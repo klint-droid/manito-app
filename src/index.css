@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+    background: radial-gradient(circle at top, #1b2859 0%, #0c1330 48%, #070b1e 100%);
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Fredoka', 'Nunito', ui-rounded, sans-serif;
+  }
+}
+
+.glass-panel {
+  background: rgba(15, 23, 56, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 228, 255, 0.22);
+}
+
+.glass-card {
+  background: linear-gradient(145deg, rgba(28, 41, 92, 0.76), rgba(14, 21, 52, 0.85));
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(185, 147, 255, 0.25);
+}
+
+.text-gradient-festive {
+  background: linear-gradient(90deg, #ffd56b, #ff9ec7, #a8e4ff, #88f2cb);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-card {
+    background: #ffffff !important;
+    border: 1px solid #d1d5db !important;
+    color: #111827 !important;
+    box-shadow: none !important;
+  }
+}
