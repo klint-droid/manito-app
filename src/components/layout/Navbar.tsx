@@ -26,11 +26,13 @@ export function Navbar() {
         <button
           type="button"
           onClick={() => setScreen('landing')}
-          className="group flex items-center gap-2 text-left"
+          className="group flex items-center gap-2.5 text-left"
         >
-          <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-pastel-pink via-pastel-purple to-ice-400 shadow-glow transition group-hover:scale-105">
-            <Gift className="h-4 w-4 text-navy-950" />
-          </div>
+          <img
+            src="/logo.jpg"
+            alt="Manita-Manito 3D Logo"
+            className="h-9 w-9 rounded-xl object-cover shadow-glow ring-1 ring-white/25 transition group-hover:scale-105"
+          />
           <div className="font-display text-sm font-bold leading-tight tracking-tight text-white sm:text-base">
             Manita-Manito <span className="text-pastel-gold">3D</span>
           </div>

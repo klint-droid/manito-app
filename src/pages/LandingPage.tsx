@@ -287,8 +287,12 @@ export function LandingPage() {
 
         {/* Footer */}
         <footer className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-ice-200/60">
-          <div className="flex items-center gap-2">
-            <Gift className="h-4 w-4 text-pastel-gold" />
+          <div className="flex items-center gap-2.5">
+            <img
+              src="/logo.jpg"
+              alt="Manita-Manito 3D Logo"
+              className="h-7 w-7 rounded-lg object-cover ring-1 ring-white/20"
+            />
             <span className="font-bold text-white">3D Manita-Manito</span>
             <span>— Make Every Gift a Little More Magical.</span>
           </div>
